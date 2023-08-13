@@ -14,7 +14,11 @@ cube(`facility_contacts`, {
       type: `number`,
       primary_key: true
     },
-    
+    facility_id:{
+      sql: 'facility_id',
+      type: 'number',
+      
+    },
     nct_id: {
       sql: `nct_id`,
       type: `string`

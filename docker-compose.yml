@@ -14,7 +14,9 @@ services:
       - postgres:/data/postgres
       - ./postgres.dmp:/postgres.dmp
       - ./init.sh:/docker-entrypoint-initdb.d/init.sh
-
+    build:
+      context: .
+      shm_size: '256mb'
     ports:
       - "5432:5432"
     networks:
