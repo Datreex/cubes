@@ -1,1 +1,4 @@
-postgres.dmp
+.env
+node_modules
+.cubestore
+upstream
